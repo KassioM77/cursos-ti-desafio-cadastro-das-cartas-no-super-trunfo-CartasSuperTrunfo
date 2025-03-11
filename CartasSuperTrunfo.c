@@ -16,6 +16,10 @@ int main() {
     double area, area2;
     float pib, pib2;
     int turismo, turismo2;
+
+    // Inclusão de variáveis da desidade populacional e renda percapita.
+    float densidade, densidade2;
+    float percapita, percapita2;
     
     // Cadastro das Cartas:
     // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
@@ -66,7 +70,10 @@ int main() {
     printf("Area da 1ª Cidade: %.2lf\n", area);
     printf("PIB da 1ª Cidade: %.2f\n", pib);
     printf("Número de pontos turísticos da 1ª Cidade: %d\n", turismo);
+    printf("\n");
 
+    printf("Densidade populacional 1ª Cidade: %.2f\n", densidade);
+    printf("PIB per capita da 1ª Cidade: %.2f\n", percapita);
        
             printf("\n");
             printf("Carta: 2\n");
@@ -77,6 +84,14 @@ int main() {
             printf("Area da 2ª Cidade: %.2lf\n", area2);
             printf("PIB da 2ª Cidade: %.2f\n", pib2);
             printf("Número de pontos turísticos da 2ª Cidade: %d\n", turismo2);
+            printf("\n");
+
+            printf("Densidade populacional 2ª Cidade: %.2f\n", densidade2);
+            printf("PIB per capita da 2ª Cidade: %.2f\n", percapita2);
+
+
+
+
 
 
 
