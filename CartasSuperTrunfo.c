@@ -13,7 +13,7 @@ int main() {
     char codigo[3], codigo2[3];
     char nome[30], nome2[30];
     int populacao, populacao2;
-    double area, area2;
+    float area, area2;
     float pib, pib2;
     int turismo, turismo2;
 
@@ -36,7 +36,7 @@ int main() {
         printf("Digite a População da 1ª Cidade: \n");
         scanf("%d", &populacao);
         printf("Digite a área da 1ª Cidade: \n");
-        scanf("%lf", &area);
+        scanf("%f", &area);
         printf("Digite o PIB da 1ª Cidade: \n");
         scanf("%f", &pib);
         printf("Digite o número de pontos turísticos da 1ª Cidade: \n");
@@ -51,7 +51,7 @@ int main() {
                 printf("Digite a População da 2ª Cidade: \n");
                 scanf("%d", &populacao2);
                 printf("Digite a área da 2ª Cidade: \n");
-                scanf("%lf", &area2);
+                scanf("%f", &area2);
                 printf("Digite o PIB da 2ª Cidade: \n");
                 scanf("%f", &pib2);
                 printf("Digite o número de pontos turísticos da 2ª Cidade: \n");
@@ -67,10 +67,13 @@ int main() {
     printf("Código da 1ª Cidade: %s\n", codigo);
     printf("Nome da 1º Cidade: %s\n", nome);
     printf("População da 1º Cidade: %.2u\n", populacao);
-    printf("Area da 1ª Cidade: %.2lf\n", area);
+    printf("Area da 1ª Cidade: %.2f\n", area);
     printf("PIB da 1ª Cidade: %.2f\n", pib);
     printf("Número de pontos turísticos da 1ª Cidade: %d\n", turismo);
     printf("\n");
+
+    densidade = (populacao / area);
+    percapita = (pib / populacao);
 
     printf("Densidade populacional 1ª Cidade: %.2f\n", densidade);
     printf("PIB per capita da 1ª Cidade: %.2f\n", percapita);
@@ -81,10 +84,13 @@ int main() {
             printf("Código da 2ª Cidade: %s\n", codigo2);
             printf("Nome da 2ª Cidade: %s\n", nome2);
             printf("População da 2º Cidade: %.2u\n", populacao2);
-            printf("Area da 2ª Cidade: %.2lf\n", area2);
+            printf("Area da 2ª Cidade: %.2f\n", area2);
             printf("PIB da 2ª Cidade: %.2f\n", pib2);
             printf("Número de pontos turísticos da 2ª Cidade: %d\n", turismo2);
             printf("\n");
+
+            densidade2 = (populacao2 / area2);
+            percapita2 = (pib2 / populacao2);
 
             printf("Densidade populacional 2ª Cidade: %.2f\n", densidade2);
             printf("PIB per capita da 2ª Cidade: %.2f\n", percapita2);
